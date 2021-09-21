@@ -31,6 +31,13 @@ detector = HaarDetector()
 plot_img_with_patches(im, faces, eyes)
 ```
 
+## Results
+
+### Haar Cascades
+
+![detection w/ haar cascades](./data/detected.jpg)
+
 ## References
 
 [Martin et al., 2001] Martin, David, et al. "A database of human segmented natural images and its application to evaluating segmentation algorithms and measuring ecological statistics." Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001. Vol. 2. IEEE, 2001.
+

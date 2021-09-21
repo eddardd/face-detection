@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
 
-def plot_img_with_patches(im, faces, eyes=None):
+def plot_img_with_patches(im, faces, eyes=None, show=True, save=True):
     _, ax = plt.subplots()
     ax.axis('off')
     ax.imshow(im, cmap='gray')
@@ -22,4 +22,7 @@ def plot_img_with_patches(im, faces, eyes=None):
             )
     for rectangle in rectangles:
         ax.add_patch(rectangle)
-    plt.show()
+    if save:
+        plt.savefig('./data/detected.jpg')
+    if show:
+        plt.show()
